@@ -174,6 +174,11 @@ var nms = (function() {
         sharer_id: sharer.sharer_id,
       };
       _postMessage('stopSharer', msg, resolve, reject);
+      hidePasscodeInputBox();
+      rtm({
+          type: 'remove-stream',
+          streamIp: document.getElementById('ipinput').value
+        });
     },
 
     _stream: null,

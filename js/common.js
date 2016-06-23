@@ -424,3 +424,41 @@ var common = (function() {
   };
 
 }());
+//my scripts
+
+
+document.getElementById('ip_block').style.display='none';
+document.getElementById('bitrateConfig').style.display='none';
+document.getElementById('statuscode').style.display='none';
+document.getElementById('b1').style.display='none';
+document.getElementById('setPasscode').style.display='none';
+document.getElementById('sn').style.display='none';
+document.getElementById('setting').style.display='none';
+    var tabs = {
+        one: document.querySelector('#one'),
+        two: document.querySelector('#two')
+    };
+
+    tabs.one.addEventListener('click', function(e) {
+        
+        document.getElementById('teacher').style.display='block';
+        document.getElementById('student').style.display='none';
+        document.getElementById('setting').style.display='block';
+           console.log("clicked teacher");
+    });
+    tabs.two.addEventListener('click', function(e) {
+    	  document.getElementById('student').style.display='block';
+          document.getElementById('teacher').style.display='none';
+          document.getElementById('setting').style.display='none';
+          document.getElementById('bitrateConfig').style.display='none';
+          console.log("clicked student");
+    });
+
+    document.getElementById('setting').addEventListener('click', function(e) {
+          if(document.getElementById('bitrateConfig').style.display=='block'){
+            document.getElementById('bitrateConfig').style.display='none';
+          }
+          else{
+            document.getElementById('bitrateConfig').style.display='block';
+          }
+   });

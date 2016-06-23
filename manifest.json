@@ -8,9 +8,16 @@
   "icons": {
     "128": "icon128.png"
   },
+ "sockets": {
+    "udp": {
+      "bind": "*",
+      "send": "*",
+      "multicastMembership": ""
+    }
+  },
   "app": {
     "background": {
-      "scripts": ["js/background.js"],
+      "scripts": ["js/MulticastSocket.js","js/ChatClient.js","js/background.js"],
       "persistent": false
     }
   },
