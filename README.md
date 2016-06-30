@@ -23,6 +23,23 @@ Other options, like Release/Debug version, and what toolchain to use, could
 also be given to the make command.
 
 
+Javascript and HTML Build
+-------------------------
+Install valcanize and criper - https://github.com/PolymerLabs/crisper
+
+after installed, go to nacld_HD directory and run -
+vulcanize index.html --inline-script | crisper --html build.html --js build.js
+
+
+Use bower element
+-------------------------
+
+Please refer to this artical -
+https://elements.polymer-project.org/guides/using-elements#installing-with-bower
+
+
+
+
 Installation
 ------------
 
